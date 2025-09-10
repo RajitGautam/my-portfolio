@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajit Gautam - portfolio</title>
+    <meta name="description" content="Professional portfolio of Rajit Gautam - Python Developer, Data Analyst, and Tkinter UI Designer">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Rajit</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Rajit Gautam</h1>
+                <h2>I'm a <span class="typing-text" id="typingText">Coder</span></h2>
+                <p>Software Developer & Cybersecurity Enthusiast skilled in building secure, user-friendly applications for web, desktop, and mobile platforms. Proficient in Python, Java, Kotlin, React, MySQL, and modern frameworks. Experienced in data analytics and secure coding practices to deliver efficient, scalable, and secure solutions.</p>
+                
+                <div class="hero-buttons">
+                    <a href="Rajit Gautam_Cy.pdf" download class="btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/RajitGautam" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rajit-gautam-42388825a/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <!-- <a href="#" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='350' viewBox='0 0 350 350'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300ff7f;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2300cc66;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='175' cy='175' r='165' fill='url(%23grad1)'/%3E%3Ccircle cx='175' cy='140' r='45' fill='%23ffffff'/%3E%3Cpath d='M115 235 Q175 185 235 235 Q210 260 175 260 Q140 260 115 235' fill='%23ffffff'/%3E%3C/svg%3E" alt="Rajit Gautam Profile" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+   <section id="services" class="section">
+    <h2 class="section-title">My Services</h2>
+    <div class="services-grid">
+
+        <!-- Python Development -->
+        <div class="service-card fade-in">
+            <div class="service-icon">
+                <i class="fab fa-python"></i>
+            </div>
+            <h3>Python Development</h3>
+            <p>Bespoke Python solutions, automation scripts, and Tkinter-based desktop apps with clean and efficient code.</p>
+        </div>
+
+        <!-- Tkinter UI Design -->
+        <div class="service-card fade-in">
+            <div class="service-icon">
+                <i class="fas fa-desktop"></i>
+            </div>
+            <h3>Tkinter UI Design</h3>
+            <p>Modern, user-friendly desktop interfaces using Tkinter, with intuitive layouts and smooth navigation.</p>
+        </div>
+
+        <!-- Web Development -->
+        <div class="service-card fade-in">
+            <div class="service-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Responsive, high-performance websites using HTML, CSS, JavaScript, React, Tailwind CSS, and Sass.</p>
+        </div>
+
+        <!-- Mobile App Development -->
+        <div class="service-card fade-in">
+            <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>Custom Android apps built with Kotlin and Jetpack Compose, optimized for speed and usability.</p>
+        </div>
+
+        <!-- Data Analytics -->
+        <div class="service-card fade-in">
+            <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Data Analytics</h3>
+            <p>Data cleaning, processing, and visualization using Pandas, NumPy, and Matplotlib for actionable insights.</p>
+        </div>
+
+        <!-- Database Management -->
+        <div class="service-card fade-in">
+            <div class="service-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <h3>Database Management</h3>
+            <p>MySQL database design, optimization, and management for secure and scalable solutions.</p>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="service-card fade-in">
+            <div class="service-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Cybersecurity & Secure Coding</h3>
+            <p>Identifying vulnerabilities, applying secure coding practices, and safeguarding applications from cyber threats.</p>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-container">
+            <div class="resume-nav">
+                <h3>Why Hire Me?</h3>
+                <ul class="nav-tabs">
+                    <li class="nav-tab active" data-tab="experience">Experience</li>
+                    <li class="nav-tab" data-tab="education">Education</li>
+                    <li class="nav-tab" data-tab="skills">Skills</li>
+                    <li class="nav-tab" data-tab="about">About Me</li>
+                </ul>
+            </div>
+
+            <div class="resume-content">
+                <div class="tab-content active" id="experience">
+                    <h3>Professional Experience</h3>
+                    <div class="timeline-grid">
+                        <div class="timeline-item">
+                            <h4>Python Tkinter Developer</h4>
+                            <p class="company">Freelance Projects</p>
+                            <p class="year">2023 - Present</p>
+                            <p>Built multiple Tkinter applications including Indian Railways App and Medical Inventory System with integrated Folium maps for location-based features.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Data Analytics Projects</h4>
+                            <p class="company">Academic & Personal Projects</p>
+                            <p class="year">2023 - Present</p>
+                            <p>Worked on sample datasets for cleaning, processing, and visualization in Python. Created comprehensive data analysis reports and dashboards.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Database Administrator</h4>
+                            <p class="company">Learning Projects</p>
+                            <p class="year">2023 - Present</p>
+                            <p>Designed and implemented database solutions using MySQL for various application requirements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="education">
+                    <h3>Education</h3>
+                    <div class="timeline-grid">
+                        <div class="timeline-item">
+                            <h4>B.Sc. Information Technology-(CGPI - 9.52)</h4>
+                            <p class="company">University of Mumbai</p>
+                            <p class="year">2023 - 2025</p>
+                            <p>Specialized in Software Engineering and Python programming. Focus on application development and database management.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Quastech Institute (thane)- Learning Python Programming  </h4>
+                            <p class="company">Offline</p>
+                            <p class="year">2023-2025</p>
+                            <p>Comprehensive course covering Python fundamentals, object-oriented programming, and GUI development with Tkinter.</p>
+                        </div>
+                        <!-- <div class="timeline-item">
+                            <h4>SSC / HSC</h4>
+                            <p class="company">Professional Development</p>
+                            <p class="year">2024</p>
+                            <p>Advanced training in data analysis, visualization, and statistical methods using Python and Excel.</p>
+                        </div> -->
+                    </div>
+                </div>
+
+             <div class="tab-content" id="skills">
+    <h3>Technical Skills</h3>
+    <div class="skills-grid">
+
+        <!-- Python -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-python"></i>
+            </div>
+            <p>Python</p>
+        </div>
+
+        <!-- Java -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-java"></i>
+            </div>
+            <p>Java</p>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <p>HTML5 / CSS / JS</p>
+        </div>
+
+        <!-- React.js -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-react"></i>
+            </div>
+            <p>React.js</p>
+        </div>
+
+        <!-- Tkinter -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-desktop"></i>
+            </div>
+            <p>Tkinter UI</p>
+        </div>
+
+        <!-- Android Development -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-android"></i>
+            </div>
+            <p>Android Development</p>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <p>Data Analysis</p>
+        </div>
+
+        <!-- Database Management -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <p>Database (MySQL)</p>
+        </div>
+
+        <!-- Excel -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-file-excel"></i>
+            </div>
+            <p>Excel</p>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <p>Cybersecurity</p>
+        </div>
+
+        <!-- Tailwind & Sass -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <p>Tailwind & Sass</p>
+        </div>
+
+        <!-- Logic Building -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+            <p>Logic Building</p>
+        </div>
+
+        <!-- GitHub -->
+        <div class="skill-item">
+            <div class="skill-icon">
+                <i class="fab fa-github"></i>
+            </div>
+            <p>GitHub</p>
+        </div>
+
+    </div>
+</div>
+
+                <div class="tab-content" id="about">
+                    <h3>About Me</h3>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Name:</span>
+                            <span class="detail-value">Rajit Gautam</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Age:</span>
+                            <span class="detail-value">21 Years</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Education:</span>
+                            <span class="detail-value">B.Sc. IT Student</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">Mumbai, India</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Specialization:</span>
+                            <span class="detail-value">Python Development</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Experience:</span>
+                            <span class="detail-value">0</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Languages:</span>
+                            <span class="detail-value">English, Hindi</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Availability:</span>
+                            <span class="detail-value">Available for Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="portfolio-grid">
+
+        <!-- Indian Railways Tracking System -->
+        <div class="portfolio-item fade-in">
+            <div class="portfolio-image">
+                <i class="fas fa-train"></i>
+            </div>
+            <div class="portfolio-content">
+                <h3>Indian Railways Tracking System</h3>
+                <p>Developed a Tkinter desktop app integrating Folium maps for real-time train tracking and route visualization, improving accessibility for railway information.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Tkinter</span>
+                    <span class="tech-tag">Folium</span>
+                    <span class="tech-tag">APIs</span>
+                </div>
+                <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i> Preview</a>
+                    <a href="https://github.com/RajitGautam" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secure Medical Inventory System -->
+        <div class="portfolio-item fade-in">
+            <div class="portfolio-image">
+                <i class="fas fa-hospital"></i>
+            </div>
+            <div class="portfolio-content">
+                <h3>Secure Medical Inventory System</h3>
+                <p>Designed a Tkinter-based desktop app with SQLite database for managing medical inventory, implementing secure login and role-based access.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Tkinter</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">Pandas</span>
+                </div>
+                <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i> Preview</a>
+                    <a href="https://github.com/RajitGautam" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Analytics Dashboard -->
+        <div class="portfolio-item fade-in">
+            <div class="portfolio-image">
+                <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="portfolio-content">
+                <h3>Data Analytics Dashboard</h3>
+                <p>Built an interactive dashboard for analyzing datasets, generating reports, and visualizing trends using Pandas and Matplotlib.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">NumPy</span>
+                </div>
+                <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i> Preview</a>
+                    <a href="https://github.com/RajitGautam" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Automation Scripts -->
+        <div class="portfolio-item fade-in">
+            <div class="portfolio-image">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="portfolio-content">
+                <h3>Automation Scripts</h3>
+                <p>Developed Python automation tools for web scraping, file management, and system administration, improving workflow efficiency.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OS Module</span>
+                    <span class="tech-tag">Selenium</span>
+                    <span class="tech-tag">BeautifulSoup</span>
+                </div>
+                <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i> Preview</a>
+                    <a href="https://github.com/RajitGautam" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excel Data Processor -->
+        <div class="portfolio-item fade-in">
+            <div class="portfolio-image">
+                <i class="fas fa-calculator"></i>
+            </div>
+            <div class="portfolio-content">
+                <h3>Automated Excel Data Processor</h3>
+                <p>Created a Python tool for cleaning, analyzing, and generating Excel reports, reducing manual work time by 60%.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Openpyxl</span>
+                    <span class="tech-tag">Xlsxwriter</span>
+                </div>
+                <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i> Preview</a>
+                    <a href="https://github.com/RajitGautam" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Database Management System -->
+        <div class="portfolio-item fade-in">
+            <div class="portfolio-image">
+                <i class="fas fa-server"></i>
+            </div>
+            <div class="portfolio-content">
+                <h3>Database Management System</h3>
+                <p>Developed a custom database management system with CRUD operations, SQL integration, and Tkinter-based visualization tools.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">SQLAlchemy</span>
+                    <span class="tech-tag">Tkinter</span>
+                </div>
+                <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i> Preview</a>
+                    <a href="https://github.com/RajitGautam" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cybersecurity Project -->
+        <div class="portfolio-item fade-in">
+            <div class="portfolio-image">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="portfolio-content">
+                <h3>Web Vulnerability Scanner</h3>
+                <p>Built a Python-based tool to detect common web vulnerabilities like SQL injection and XSS, enhancing web application security.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Requests</span>
+                    <span class="tech-tag">BeautifulSoup</span>
+                    <span class="tech-tag">Security</span>
+                </div>
+                <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i> Preview</a>
+                    <a href="https://github.com/RajitGautam" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile App -->
+        <div class="portfolio-item fade-in">
+            <div class="portfolio-image">
+                <i class="fab fa-android"></i>
+            </div>
+            <div class="portfolio-content">
+                <h3>Mental Mathematics Game</h3>
+                <p>Developed an Android game using Jetpack Compose to improve mental calculation skills with multiple difficulty levels.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Kotlin</span>
+                    <span class="tech-tag">Jetpack Compose</span>
+                    <span class="tech-tag">Coroutines</span>
+                    <span class="tech-tag">Math Logic</span>
+                </div>
+                <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i> Preview</a>
+                    <a href="https://github.com/RajitGautam" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="section">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+        
+        <!-- Left Side: Contact Info -->
+        <div class="contact-info">
+            <h3>Let’s Work Together</h3>
+            <p>I’m always open to collaborating on exciting projects and tackling challenging problems. Whether you need a <strong>software developer</strong>, <strong>cybersecurity enthusiast</strong>, or <strong>data analyst</strong>, let’s connect and create something impactful together.</p>
+            
+            <ul class="contact-details">
+                <li class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <strong>Phone</strong><br>
+                        <a href="tel:+918879208262">+91 8879208262</a>
+                    </div>
+                </li>
+                <li class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:rajitkumar1819@gmail.com">rajitkumar1819@gmail.com</a>
+                    </div>
+                </li>
+                <li class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <strong>Location</strong><br>
+                        Mumbai (Thane), Maharashtra, India
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Social Links -->
+            <div class="contact-social">
+                <a href="https://linkedin.com/in/your-link" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/RajitGautam" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/918879208262" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" required placeholder="Tell me about your project or how I can help you..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary">
+                <i class="fas fa-paper-plane"></i> Let’s Work Together
+            </button>
+        </form>
+    </div>
+</section>
+
+
+    <script>
+        // Loading screen
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loading').classList.add('hidden');
+            }, 1200);
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            
+            // Animate hamburger menu
+            const spans = this.querySelectorAll('span');
+            if (navMenu.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+            } else {
+                spans[0].style.transform = 'rotate(0) translate(0, 0)';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'rotate(0) translate(0, 0)';
+            }
+        });
+
+        // Typing animation
+        const titles = ['Coder', 'Python Developer', 'Data Analyst', 'Problem Solver'];
+        let currentTitle = 0;
+        let currentChar = 0;
+        let isDeleting = false;
+        const typingText = document.getElementById('typingText');
+
+        function typeAnimation() {
+            const current = titles[currentTitle];
+            
+            if (isDeleting) {
+                typingText.textContent = current.substring(0, currentChar - 1);
+                currentChar--;
+            } else {
+                typingText.textContent = current.substring(0, currentChar + 1);
+                currentChar++;
+            }
+
+            let typeSpeed = isDeleting ? 100 : 150;
+
+            if (!isDeleting && currentChar === current.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && currentChar === 0) {
+                isDeleting = false;
+                currentTitle = (currentTitle + 1) % titles.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeAnimation, typeSpeed);
+        }
+
+        // Start typing animation after page load
+        setTimeout(typeAnimation, 1500);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Close mobile menu if open
+                navMenu.classList.remove('active');
+
+                // Update active nav link
+                document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Resume tabs functionality
+        const navTabs = document.querySelectorAll('.nav-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        navTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetTab = this.getAttribute('data-tab');
+
+                // Remove active class from all tabs and contents
+                navTabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding content
+                this.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 10, 10, 0.98)';
+                header.style.borderBottom = '1px solid rgba(0, 255, 127, 0.3)';
+            } else {
+                header.style.background = 'rgba(10, 10, 10, 0.95)';
+                header.style.borderBottom = '1px solid rgba(0, 255, 127, 0.1)';
+            }
+        });
+
+        // Active navigation highlighting on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPos = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                    if (navLink) {
+                        navLink.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Thank you for your message! I\'ll get back to you soon.');
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // Enhanced hover effects for cards
+        document.querySelectorAll('.service-card, .portfolio-item').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-12px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Ripple effect for buttons
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                let ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                this.appendChild(ripple);
+
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+
+                ripple.style.left = `${x}px`;
+                ripple.style.top = `${y}px`;
+
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelector('.hero');
+            if (parallaxElements) {
+                const speed = scrolled * 0.1;
+                parallaxElements.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Add smooth transitions to all elements
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
